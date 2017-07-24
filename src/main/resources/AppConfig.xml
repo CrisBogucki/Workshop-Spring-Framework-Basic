@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="fileAdderProvider" scope="prototype" class="pl.asseco.workshop.calculationModule.Services.FileAdderProvider"/>
+
+    <bean id="adderServiceOne" class="pl.asseco.workshop.calculationModule.Services.AdderServiceOne">
+        <property name="adderProvider" ref="fileAdderProvider"></property>
+    </bean>
+
+    <bean id="adderServiceTwo" class="pl.asseco.workshop.calculationModule.Services.AdderServiceTwo">
+        <property name="adderProvider" ref="fileAdderProvider"></property>
+    </bean>
+
+</beans>
