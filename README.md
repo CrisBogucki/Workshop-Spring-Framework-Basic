@@ -4,3 +4,6 @@
 
 ![](https://spring.io/img/spring-by-pivotal.png)
 
+## Zakres funkcjonalności projektu
+
+* [ ] Przygotowanie modułu obliczeniowego
