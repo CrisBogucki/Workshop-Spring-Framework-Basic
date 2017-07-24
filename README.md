@@ -12,7 +12,6 @@
 
 - Wymagania do workshopu-u
 - SOLID wrzorzec podstawa w Spring-u
-- Praca w części praktycznej
 - Narzędzia do współpracy oraz kodowania
     - IntelliJ IDEA
     - GitHub
@@ -20,6 +19,8 @@
     - Wstęp do projektu
     - Kontekst aplikacji w kontenerze springa
     - Konfiguracja javaconfig @Configuration
+    - @Scope - zasięg obiektów
+    - Konfiguracja za pomocą XML
     
 
 
