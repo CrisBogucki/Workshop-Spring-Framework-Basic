@@ -28,7 +28,13 @@
     - @Primary - wiecej komponentów tego samego typu...
     - @Qualifier - precyzyjne dostarczanie @Bean-ów
     - @Profile - profilowanie w aplikacji
-    - 
+    - Enviroment - Zmienne środowiskowe...
+    - Properties - zarządzanie właściwościami aplikacji
+    - @Value - dostarczanie wartosci do właściwości klasy
+    - Multijęzyczność (i18n)
+    - @Import - łączenie konfiguracji
+    
+    
     
 
 
