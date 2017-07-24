@@ -21,6 +21,14 @@
     - Konfiguracja javaconfig @Configuration
     - @Scope - zasięg obiektów
     - Konfiguracja za pomocą XML
+    - @Autowired - wstrzykiwanie instancji obiektu przez referencje
+    - Kolekcje @Bean-ów
+    - @ComponentScan - automatyczne scanowanie 
+    - exclude include filters
+    - @Primary - wiecej komponentów tego samego typu...
+    - @Qualifier - precyzyjne dostarczanie @Bean-ów
+    - @Profile - profilowanie w aplikacji
+    - 
     
 
 
