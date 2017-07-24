@@ -2,5 +2,5 @@
 
 > Aplikacja stworzona na potrzeby Asseco Workshop #1
 
-!(https://spring.io/img/spring-by-pivotal.png)
+![](https://spring.io/img/spring-by-pivotal.png)
 
