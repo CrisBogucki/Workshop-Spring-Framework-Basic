@@ -15,6 +15,12 @@
 - Praca w części praktycznej
 - Narzędzia do współpracy oraz kodowania
     - IntelliJ IDEA
+    - GitHub
+- Warsztaty, część praktyczna
+    - Wstęp do projektu
+    - Kontekst aplikacji w kontenerze springa
+    - Konfiguracja javaconfig @Configuration
+    
 
 
 
