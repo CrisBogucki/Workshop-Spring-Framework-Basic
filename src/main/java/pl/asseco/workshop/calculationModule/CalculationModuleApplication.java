@@ -1,11 +1,11 @@
 package pl.asseco.workshop.calculationModule;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import pl.asseco.workshop.calculationModule.Config.AppConfig;
-import pl.asseco.workshop.calculationModule.Services.AdderService;
+import pl.asseco.workshop.calculationModule.Services.AdderServiceOne;
+import pl.asseco.workshop.calculationModule.Services.AdderServiceTwo;
 
 @SpringBootApplication
 public class CalculationModuleApplication {
@@ -15,8 +15,11 @@ public class CalculationModuleApplication {
 
 		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
-		AdderService service = context.getBean(AdderService.class);
+		AdderServiceOne service = context.getBean(AdderServiceOne.class);
 	 	service.sum();
+
+		AdderServiceTwo service1 = context.getBean(AdderServiceTwo.class);
+		service1.sum();
 
 	}
 }

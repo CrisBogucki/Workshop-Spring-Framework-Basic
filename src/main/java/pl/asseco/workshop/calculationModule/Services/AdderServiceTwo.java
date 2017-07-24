@@ -3,7 +3,7 @@ package pl.asseco.workshop.calculationModule.Services;
 /**
  * Created by krzysztof.bogucki on 24 lip 2017.
  */
-public class AdderService {
+public class AdderServiceTwo {
 
     private AdderProvider adderProvider;
 

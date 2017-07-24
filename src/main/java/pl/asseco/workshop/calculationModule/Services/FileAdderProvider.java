@@ -19,7 +19,7 @@ public class FileAdderProvider implements AdderProvider {
     @Override
     public ArrayList<Integer> getItems() {
 
-        //System.out.println("Instancja FileAdderProvider-a " + hashCode());
+        System.out.println("Instancja FileAdderProvider-a " + hashCode());
 
         //TODO: Implement load Integers from file
         ArrayList<Integer> list = new ArrayList<Integer>();
