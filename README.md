@@ -1,5 +1,4 @@
-# Spring Freamework
-Workshop Java Spring Freamework
-- Basic Spring
-- AOP
-- REST 
+# Workshop JAVA Spring Framework
+
+> Aplikacja stworzona na potrzeby Asseco Workshop 
+
