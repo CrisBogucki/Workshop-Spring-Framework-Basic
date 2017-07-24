@@ -1,5 +1,5 @@
 # Spring Freamework
 Workshop Java Spring Freamework
-- Podstawy springa
+- Basic Spring
 - AOP
 - REST 
