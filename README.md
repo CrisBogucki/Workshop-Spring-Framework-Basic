@@ -14,7 +14,7 @@
 - SOLID wrzorzec podstawa w Spring-u
 - Praca w części praktycznej
 - Narzędzia do współpracy oraz kodowania
-    --  IntelliJ IDEA
+    - IntelliJ IDEA
 
 
 
