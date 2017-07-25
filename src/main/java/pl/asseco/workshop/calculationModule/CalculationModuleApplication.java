@@ -14,13 +14,13 @@ public class CalculationModuleApplication {
 	public static void main(String[] args) {
 		//SpringApplication.run(CalculationModuleApplication.class, args);
 
-		ApplicationContext context = new ClassPathXmlApplicationContext("/AppConfig.xml");
+		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
 		AdderServiceOne service = context.getBean(AdderServiceOne.class);
 	 	service.sum();
 
-		AdderServiceTwo service1 = context.getBean(AdderServiceTwo.class);
-		service1.sum();
+//		AdderServiceTwo service1 = context.getBean(AdderServiceTwo.class);
+//		service1.sum();
 
 	}
 }
