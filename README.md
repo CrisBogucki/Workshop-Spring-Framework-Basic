@@ -34,7 +34,8 @@
     - Multijęzyczność (i18n)
     - @Import - łączenie konfiguracji
     
-    - AOP
+- Omówienie wybranych modułów
+    - Aspect Oriented Programming
     - REST Services
     
     
