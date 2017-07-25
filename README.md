@@ -34,6 +34,9 @@
     - Multijęzyczność (i18n)
     - @Import - łączenie konfiguracji
     
+    - AOP
+    - REST Services
+    
     
     
 
