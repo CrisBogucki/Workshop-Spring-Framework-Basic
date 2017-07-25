@@ -28,12 +28,12 @@ public class AppConfig {
         return new AdderServiceTwo();
     }
 
-    @Bean
+    @Bean(name="Standard1 konfiguracja podstawowa")
     public LimitAdderProvider standardOneLimitService(){
         return new StandardOneLimitService();
     }
 
-    @Bean
+    @Bean(name="Standard2 konfiguracja rozszerzona")
     public LimitAdderProvider standardTwoLimitService(){
         return new StandardTwoLimitService();
     }
