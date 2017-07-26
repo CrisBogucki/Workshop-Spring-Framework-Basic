@@ -6,7 +6,21 @@ Aplikacja stworzona na potrzeby Workshop #1 dla Asseco Poland S.A.
 
 ## Zakres funkcjonalności projektu
 
-* [ ] Przygotowanie modułu obliczeniowego
+* [ ] Przygotowanie podstawowego modułu obliczeniowego
+* [ ] Wstrzyknięcie różnych referencji obiektu poprzez @Scope
+* [ ] Przeprowadzenie konfiguracji za pomoca pliku XML
+* [ ] Wstrzyknięcie referencji obiektu poprzez @Autowired
+* [ ] Ustalenie nazewnictwa @Bean oraz jej zastosowanie 
+* [ ] Konfiguracja za pomocą adnotacji @ComponentScan
+* [ ] Załączanie oraz odłączenie komponentów
+* [ ] Priorytetyzacja komponentów za pomocą adnotacji @Primary
+* [ ] Precyzujne dostarczanie referencji obiektów za pomoca adnotacji @Qualifier
+* [ ] Profilowanie aplikacji za pomocą adnotacji @Profile
+* [ ] Praca z plikami Properties oraz adnotacją @PropertySource
+* [ ] Konfiguracja i użycie Enviroment-u
+* [ ] Użycie properties za pomocą adnotacji @Value
+* [ ] Konfiguracja oraz użycie Multijęzyczności za pomocą MessageSource
+* [ ] Łączenie konfiguracji aplikacji za pomocą adnotacji @Import
 
 ## O czym powiedzieć
 
