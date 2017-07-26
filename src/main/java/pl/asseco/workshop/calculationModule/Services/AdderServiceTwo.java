@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 /**
  * Created by krzysztof.bogucki on 24 lip 2017.
  */
-
+@Service()
 public class AdderServiceTwo {
 
     private AdderProvider adderProvider;

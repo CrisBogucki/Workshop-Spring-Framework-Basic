@@ -9,7 +9,7 @@ import pl.asseco.workshop.calculationModule.Config.AppConfigAutoScan;
 import pl.asseco.workshop.calculationModule.Services.AdderServiceOne;
 import pl.asseco.workshop.calculationModule.Services.AdderServiceTwo;
 
-@SpringBootApplication
+//@SpringBootApplication
 public class CalculationModuleApplication {
 
 	public static void main(String[] args) {

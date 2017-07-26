@@ -10,7 +10,7 @@ import java.util.Map;
 /**
  * Created by krzysztof.bogucki on 24 lip 2017.
  */
-@Service
+@Service()
 public class AdderServiceOne {
 
     private AdderProvider adderProvider;
@@ -20,35 +20,40 @@ public class AdderServiceOne {
         this.adderProvider = adderProvider;
     }
 
-    @Autowired()
+    @Autowired(required = false)
     //private List<LimitAdderProvider> limitAdderProviders;
     private Map<String, LimitAdderProvider> limitAdderProviders;
 
     public Integer sum(){
-
-        System.out.println("Ilość załadowanych komponnetów (Benów) do serwisu: " + limitAdderProviders.size());
 
         Integer sum = 0;
         for (Integer item: adderProvider.getItems()) {
             sum += item;
         }
 
-        //for(LimitAdderProvider limitAdderProvider: limitAdderProviders){
-        for( String providerName : limitAdderProviders.keySet() ){
+        if(limitAdderProviders != null) {
 
-            System.out.println("Aktualnie do obliczeń używam providera " + providerName);
+            System.out.println("Ilość załadowanych komponnetów (Benów) do serwisu: " + limitAdderProviders.size());
 
-            LimitAdderProvider limitAdderProvider = limitAdderProviders.get(providerName);
+            //for(LimitAdderProvider limitAdderProvider: limitAdderProviders){
+            for (String providerName : limitAdderProviders.keySet()) {
 
-            Integer minLimit = limitAdderProvider.getMinSum(sum);
-            Integer maxLimit = limitAdderProvider.getMaxSum(sum);
+                System.out.println("Aktualnie do obliczeń używam providera " + providerName);
 
-            if(limitAdderProvider.isMinLimit()){
-                sum = minLimit;
-            } else if (limitAdderProvider.isMaxLimit()) {
-                sum = maxLimit;
+                LimitAdderProvider limitAdderProvider = limitAdderProviders.get(providerName);
+
+                Integer minLimit = limitAdderProvider.getMinSum(sum);
+                Integer maxLimit = limitAdderProvider.getMaxSum(sum);
+
+                if (limitAdderProvider.isMinLimit()) {
+                    sum = minLimit;
+                } else if (limitAdderProvider.isMaxLimit()) {
+                    sum = maxLimit;
+                }
+
             }
-
+        } else {
+            System.out.println("Nie załadowano komponentów typu LimitAdderProvider");
         }
 
         System.out.println("Obliczono sumę w serwisie i wynosi ona " + sum.toString());
