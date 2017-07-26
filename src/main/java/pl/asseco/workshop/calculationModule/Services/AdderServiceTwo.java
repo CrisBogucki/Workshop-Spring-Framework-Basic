@@ -1,10 +1,12 @@
 package pl.asseco.workshop.calculationModule.Services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  * Created by krzysztof.bogucki on 24 lip 2017.
  */
+
 public class AdderServiceTwo {
 
     private AdderProvider adderProvider;

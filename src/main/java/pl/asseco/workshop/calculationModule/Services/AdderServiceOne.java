@@ -1,6 +1,8 @@
 package pl.asseco.workshop.calculationModule.Services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
@@ -8,6 +10,7 @@ import java.util.Map;
 /**
  * Created by krzysztof.bogucki on 24 lip 2017.
  */
+@Service
 public class AdderServiceOne {
 
     private AdderProvider adderProvider;

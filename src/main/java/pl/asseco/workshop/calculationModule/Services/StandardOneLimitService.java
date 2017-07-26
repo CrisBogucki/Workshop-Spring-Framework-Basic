@@ -1,8 +1,11 @@
 package pl.asseco.workshop.calculationModule.Services;
 
+import org.springframework.stereotype.Service;
+
 /**
  * Created by krzysztof.bogucki on 25 lip 2017.
  */
+@Service
 public class StandardOneLimitService implements LimitAdderProvider {
 
     private Boolean isMaxLimit = false;

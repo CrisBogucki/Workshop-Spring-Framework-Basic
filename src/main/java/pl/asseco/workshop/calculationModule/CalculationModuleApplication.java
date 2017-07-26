@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import pl.asseco.workshop.calculationModule.Config.AppConfig;
+import pl.asseco.workshop.calculationModule.Config.AppConfigAutoScan;
 import pl.asseco.workshop.calculationModule.Services.AdderServiceOne;
 import pl.asseco.workshop.calculationModule.Services.AdderServiceTwo;
 
@@ -14,7 +15,7 @@ public class CalculationModuleApplication {
 	public static void main(String[] args) {
 		//SpringApplication.run(CalculationModuleApplication.class, args);
 
-		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfigAutoScan.class);
 
 		AdderServiceOne service = context.getBean(AdderServiceOne.class);
 	 	service.sum();

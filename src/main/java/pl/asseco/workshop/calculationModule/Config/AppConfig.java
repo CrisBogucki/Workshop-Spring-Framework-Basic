@@ -8,9 +8,8 @@ import pl.asseco.workshop.calculationModule.Services.*;
 /**
  * Created by krzysztof.bogucki on 24 lip 2017.
  */
-@Configuration
+//@Configuration
 public class AppConfig {
-
 
     @Bean
     @Scope("prototype")
@@ -19,7 +18,7 @@ public class AppConfig {
     }
 
     @Bean
-    public AdderServiceOne adderService(){
+    public AdderServiceOne adderOneService(){
         return new AdderServiceOne();
     }
 
