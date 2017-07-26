@@ -1,9 +1,6 @@
 package pl.asseco.workshop.calculationModule.Config;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.*;
 import pl.asseco.workshop.calculationModule.Services.*;
 
 /**
@@ -14,12 +11,14 @@ public class AppConfig {
 
     @Bean("DatabaseDeveloperProvider")
     @Scope("prototype")
+    @Profile("dev")
     public AdderProvider fileAdderProvider(){
         return new FileAdderProvider();
     }
 
     @Bean("DatabaseProductionProvider")
     @Scope("prototype")
+    @Profile("prod")
     public AdderProvider databaseAdderProvider(){
         return new DatabaseAdderProvider();
     }
@@ -35,11 +34,13 @@ public class AppConfig {
     }
 
     @Bean(name="Standard1 konfiguracja podstawowa")
+    @Profile("dev")
     public LimitAdderProvider standardOneLimitService(){
         return new StandardOneLimitService();
     }
 
     @Bean(name="Standard2 konfiguracja rozszerzona")
+    @Profile("prod")
     public LimitAdderProvider standardTwoLimitService(){
         return new StandardTwoLimitService();
     }

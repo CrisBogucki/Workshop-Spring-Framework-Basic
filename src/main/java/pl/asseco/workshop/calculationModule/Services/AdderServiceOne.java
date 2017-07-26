@@ -17,7 +17,6 @@ public class AdderServiceOne {
     private AdderProvider adderProvider;
 
     @Autowired(required = false)
-    @Qualifier("DatabaseProductionProvider")
     public void setAdderProvider(AdderProvider adderProvider) {
         this.adderProvider = adderProvider;
     }
