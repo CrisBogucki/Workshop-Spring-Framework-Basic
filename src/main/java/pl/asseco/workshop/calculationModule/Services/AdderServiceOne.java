@@ -1,6 +1,7 @@
 package pl.asseco.workshop.calculationModule.Services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +16,8 @@ public class AdderServiceOne {
 
     private AdderProvider adderProvider;
 
-    @Autowired
+    @Autowired(required = false)
+    @Qualifier("DatabaseProductionProvider")
     public void setAdderProvider(AdderProvider adderProvider) {
         this.adderProvider = adderProvider;
     }

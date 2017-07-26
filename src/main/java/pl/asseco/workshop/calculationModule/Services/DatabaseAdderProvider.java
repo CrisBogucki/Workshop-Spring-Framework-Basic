@@ -12,7 +12,6 @@ import java.util.Random;
  */
 @Service
 @Scope("prototype")
-@Primary
 public class DatabaseAdderProvider implements AdderProvider {
 
     private Random generator;

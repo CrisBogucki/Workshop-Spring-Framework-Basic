@@ -1,6 +1,7 @@
 package pl.asseco.workshop.calculationModule.Services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 /**
@@ -12,6 +13,7 @@ public class AdderServiceTwo {
     private AdderProvider adderProvider;
 
     @Autowired(required = false)
+    @Qualifier("DatabaseProductionProvider")
     public void setAdderProvider(AdderProvider adderProvider) {
         this.adderProvider = adderProvider;
     }
@@ -28,7 +30,7 @@ public class AdderServiceTwo {
             }
         }
 
-        System.out.println("Obliczono sumę w serwisie i wynosi ona " + sum.toString());
+        System.out.println("Obliczono sumę w serwisie 2 i wynosi ona " + sum.toString());
 
         return sum;
     }

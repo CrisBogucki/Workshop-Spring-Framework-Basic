@@ -12,15 +12,14 @@ import pl.asseco.workshop.calculationModule.Services.*;
 @Configuration
 public class AppConfig {
 
-    @Bean
+    @Bean("DatabaseDeveloperProvider")
     @Scope("prototype")
     public AdderProvider fileAdderProvider(){
         return new FileAdderProvider();
     }
 
-    @Bean
+    @Bean("DatabaseProductionProvider")
     @Scope("prototype")
-    @Primary
     public AdderProvider databaseAdderProvider(){
         return new DatabaseAdderProvider();
     }
