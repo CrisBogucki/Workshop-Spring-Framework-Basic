@@ -68,7 +68,7 @@ public class AdderServiceOne {
 
     public void osInfo(){
 
-        String name = environment.getProperty("osName");
+        String name = environment.getProperty("OS");
 
         System.out.println("Domyślny system operacyjny dla naszej aplikacji: " + name);
 
