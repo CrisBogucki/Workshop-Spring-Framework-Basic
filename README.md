@@ -20,7 +20,7 @@ Aplikacja stworzona na potrzeby Workshop #1 dla Asseco Poland S.A.
 * [ ] Konfiguracja i użycie Enviroment-u
 * [ ] Użycie properties za pomocą adnotacji @Value
 * [ ] Konfiguracja oraz użycie Multijęzyczności za pomocą MessageSource
-* [ ] Łączenie konfiguracji aplikacji za pomocą adnotacji @Import
+* [ ] Łączenie konfiguracji aplikacji za pomocą adnotacji @ImportResource
 
 ## O czym powiedzieć
 
