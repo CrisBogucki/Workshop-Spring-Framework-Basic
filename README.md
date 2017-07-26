@@ -20,6 +20,7 @@
 * [ ] Konfiguracja i użycie Enviroment-u
 * [ ] Użycie properties za pomocą adnotacji @Value
 * [ ] Konfiguracja oraz użycie Multijęzyczności za pomocą MessageSource
+* [ ] Łączenie konfiguracji aplikacji za pomocą adnotacji @Import
 
 ## O czym powiedzieć
 
