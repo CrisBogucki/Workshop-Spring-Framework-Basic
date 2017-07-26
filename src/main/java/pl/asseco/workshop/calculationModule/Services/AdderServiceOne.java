@@ -3,6 +3,7 @@ package pl.asseco.workshop.calculationModule.Services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -60,6 +61,17 @@ public class AdderServiceOne {
         System.out.println("Obliczono sumę w serwisie i wynosi ona " + sum.toString());
 
         return sum;
+    }
+
+    @Autowired
+    private Environment environment;
+
+    public void osInfo(){
+
+        String name = environment.getProperty("osName");
+
+        System.out.println("Domyślny system operacyjny dla naszej aplikacji: " + name);
+
     }
 
 }

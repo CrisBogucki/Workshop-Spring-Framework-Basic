@@ -20,6 +20,7 @@ public class CalculationModuleApplication {
 
 		AdderServiceOne service = context.getBean(AdderServiceOne.class);
 	 	service.sum();
+	 	service.osInfo();
 
 //		AdderServiceTwo service1 = context.getBean(AdderServiceTwo.class);
 //		service1.sum();
