@@ -15,6 +15,7 @@ public class CalculationModuleApplication {
 	public static void main(String[] args) {
 		//SpringApplication.run(CalculationModuleApplication.class, args);
 
+		//ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfigAutoScan.class);
 
 		AdderServiceOne service = context.getBean(AdderServiceOne.class);
