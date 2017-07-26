@@ -19,8 +19,12 @@ public class CalculationModuleApplication {
 		//ApplicationContext context = new AnnotationConfigApplicationContext(AppConfigAutoScan.class);
 
 		AdderServiceOne service = context.getBean(AdderServiceOne.class);
-	 	service.sum();
+
+		service.hellowWorld();
+
+		service.sum();
 	 	service.osInfo();
+
 
 //		AdderServiceTwo service1 = context.getBean(AdderServiceTwo.class);
 //		service1.sum();

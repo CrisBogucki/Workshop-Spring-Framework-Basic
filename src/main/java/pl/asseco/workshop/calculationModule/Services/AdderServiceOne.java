@@ -3,6 +3,7 @@ package pl.asseco.workshop.calculationModule.Services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Scope;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
@@ -71,6 +72,13 @@ public class AdderServiceOne {
 
         System.out.println("Domyślny system operacyjny dla naszej aplikacji: " + this.name);
 
+    }
+
+    @Autowired
+    private MessageSource mgs;
+
+    public void hellowWorld(){
+        System.out.println("Powitanie: " + mgs.getMessage("hellow", null, null));
     }
 
 }
