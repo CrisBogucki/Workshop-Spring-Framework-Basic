@@ -2,6 +2,7 @@ package pl.asseco.workshop.calculationModule.Services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
@@ -63,14 +64,12 @@ public class AdderServiceOne {
         return sum;
     }
 
-    @Autowired
-    private Environment environment;
+    @Value("${osName1: To jest nasza wartość domyślna i weź ja wtedy kiedy nie znajdzisz wartości zdefiniowanej}")
+    private String name;
 
     public void osInfo(){
 
-        String name = environment.getProperty("OS");
-
-        System.out.println("Domyślny system operacyjny dla naszej aplikacji: " + name);
+        System.out.println("Domyślny system operacyjny dla naszej aplikacji: " + this.name);
 
     }
 
