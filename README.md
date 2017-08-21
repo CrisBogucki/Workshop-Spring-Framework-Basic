@@ -6,21 +6,21 @@ Aplikacja stworzona na potrzeby Workshop #1 dla Asseco Poland S.A.
 
 ## Zakres funkcjonalności projektu
 
-* [ ] Przygotowanie podstawowego modułu obliczeniowego
-* [ ] Wstrzyknięcie różnych referencji obiektu poprzez @Scope
-* [ ] Przeprowadzenie konfiguracji za pomoca pliku XML
-* [ ] Wstrzyknięcie referencji obiektu poprzez @Autowired
-* [ ] Ustalenie nazewnictwa @Bean oraz jej zastosowanie 
-* [ ] Konfiguracja za pomocą adnotacji @ComponentScan
-* [ ] Załączanie oraz odłączenie komponentów
-* [ ] Priorytetyzacja komponentów za pomocą adnotacji @Primary
-* [ ] Precyzujne dostarczanie referencji obiektów za pomoca adnotacji @Qualifier
-* [ ] Profilowanie aplikacji za pomocą adnotacji @Profile
-* [ ] Praca z plikami Properties oraz adnotacją @PropertySource
-* [ ] Konfiguracja i użycie Enviroment-u
-* [ ] Użycie properties za pomocą adnotacji @Value
-* [ ] Konfiguracja oraz użycie Multijęzyczności za pomocą MessageSource
-* [ ] Łączenie konfiguracji aplikacji za pomocą adnotacji @ImportResource
+* [x] Przygotowanie podstawowego modułu obliczeniowego
+* [x] Wstrzyknięcie różnych referencji obiektu poprzez @Scope
+* [x] Przeprowadzenie konfiguracji za pomoca pliku XML
+* [x] Wstrzyknięcie referencji obiektu poprzez @Autowired
+* [x] Ustalenie nazewnictwa @Bean oraz jej zastosowanie 
+* [x] Konfiguracja za pomocą adnotacji @ComponentScan
+* [x] Załączanie oraz odłączenie komponentów
+* [x] Priorytetyzacja komponentów za pomocą adnotacji @Primary
+* [x] Precyzujne dostarczanie referencji obiektów za pomoca adnotacji @Qualifier
+* [x] Profilowanie aplikacji za pomocą adnotacji @Profile
+* [x] Praca z plikami Properties oraz adnotacją @PropertySource
+* [x] Konfiguracja i użycie Enviroment-u
+* [x] Użycie properties za pomocą adnotacji @Value
+* [x] Konfiguracja oraz użycie Multijęzyczności za pomocą MessageSource
+* [x] Łączenie konfiguracji aplikacji za pomocą adnotacji @ImportResource
 
 ## O czym powiedzieć
 
