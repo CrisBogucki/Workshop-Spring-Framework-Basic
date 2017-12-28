@@ -1,6 +1,6 @@
 # Workshop JAVA Spring Framework
 
-Aplikacja stworzona na potrzeby Workshop #1 dla Asseco Poland S.A.
+Aplikacja stworzona na potrzeby Workshop
 
 ![](https://spring.io/img/spring-by-pivotal.png)
 
